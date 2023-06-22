@@ -1,0 +1,68 @@
+-- drop文
+drop table employee_info;
+drop table company_info;
+drop table employee_state;
+
+
+-- ログイン情報テーブル作成
+CREATE TABLE login_info(
+login_id TEXT NOT NULL PRIMARY KEY,
+password TEXT NOT NULL,
+is_deleted TEXT NOT NULL DEFAULT '0',
+created_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+modified_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+created_id TEXT NOT NULL,
+modified_id TEXT NOT NULL
+);
+
+
+-- 社員情報テーブル作成
+CREATE TABLE employee_info(
+employee_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+name TEXT NOT NULL,
+name_hiragana TEXT NOT NULL,
+birthday TEXT NOT NULL,
+sex TEXT NOT NULL,
+mail_address TEXT NOT NULL,
+telephone_number TEXT NOT NULL,
+is_deleted TEXT NOT NULL DEFAULT '0',
+created_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+modified_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+created_id TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+modified_id TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+
+-- 会社情報テーブル作成
+CREATE TABLE company_info(
+company_id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+company_name TEXT,
+abbreviation TEXT,
+is_deleted TEXT NOT NULL DEFAULT '0',
+created_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+modified_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+created_id TEXT NOT NULL,
+modified_id TEXT NOT NULL
+);
+
+
+-- 社員状況テーブル作成
+CREATE TABLE employee_state(
+employee_info_id INTEGER NOT NULL,
+company_info_id INTEGER NOT NULL,
+business_manager TEXT NOT NULL,
+department TEXT NOT NULL,
+commissioning_status TEXT NOT NULL,
+status TEXT NOT NULL,
+hire_date TEXT NOT NULL,
+retire_date TEXT,
+is_deleted TEXT NOT NULL DEFAULT '0',
+created_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+modified_date TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+created_id TEXT NOT NULL,
+modified_id TEXT NOT NULL,
+FOREIGN KEY(company_info_id)REFERENCES company_info(company_id),
+FOREIGN KEY(employee_info_id)REFERENCES employee_info(employee_id)
+);
+
+

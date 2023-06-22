@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+div {
+	text-align: right;
+	margin: 0px 170px;
+	padding: 10px 0px;
+}
+
+td {
+	padding: 7px 12px;
+	text-align: center;
+    white-space: nowrap;
+}

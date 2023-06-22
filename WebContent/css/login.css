@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.login-body {
+	position: relative;
+	width: 400px;
+	margin: 30px auto 15px auto;
+	padding: 10px 10px;
+	border: 1px solid #555;
+	background-color: #ffe599;
+}
+
+.box {
+	width: 200px;
+	margin: 5px 0px 5px 20px;
+	border-radius: 5px;
+}
+
+.login-submit {
+	text-align: center;
+}
+
+.button {
+	margin: 10px auto;
+	padding: 3px 20px;
+}

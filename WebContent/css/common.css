@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+h1 {
+	text-align: center;
+}
+
+span,ul {
+	color: red;
+	display: block;
+	text-align: center;
+	padding-left: 0;
+	list-style: none;
+}
+
+th {
+	background-color: #d4e1f5;
+}
+
+body {
+	position: relative;
+	text-align: center;
+	width: 1200px;
+	margin: 15px auto;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}

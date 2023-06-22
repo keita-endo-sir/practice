@@ -1,0 +1,189 @@
+-- select文
+select * from login_info;
+select * from employee_info;
+select * from employee_state;
+select * from company_info;
+
+
+-- ログイン情報テーブルにデータを登録
+INSERT INTO login_info
+(login_id, password, is_deleted, created_id, modified_id) 
+VALUES
+('admin', 'admin0000', '0', 'system', 'system');
+INSERT INTO login_info
+(login_id, password, is_deleted, created_id, modified_id) 
+VALUES
+('user001', 'Pass0101', '0', 'system', 'system');
+INSERT INTO login_info
+(login_id, password, is_deleted, created_id, modified_id) 
+VALUES
+('test', 'test@1234', '0', 'system', 'system');
+
+
+-- 社員情報テーブルにデータを登録
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('代々木早苗', 'よよぎさなえ', '2000-10-18', '1', 's.tou@secure-i.jp', '00011112222', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('加藤次郎', 'かとうじろう', '1981-05-29', '0', 'j.katou@secure-i.jp', '11122223333', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('山口佳代子', 'やまぐちかよこ', '1989-06-23', '1', 'k.yamaguti@secure-i.jp', '22233334444', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('園梅子', 'ぞのうめこ', '1991-06-04', '0', 'u.zono@secure-i.jp' ,'33344445555', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('上景子', 'かみけいこ', '1980-04-12', '1', 'i.ooesu@lberc-g.jp', '44455556666', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('赤坂伴治', 'あかさかはんじ', '1999-12-24', '0', 'a.roido@lberc-g.jp', '55566667777', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('佐々木小雪', 'ささきこゆき', '2001-02-12', '1', 'k.sasaki@lberc-g.jp', '66677778888', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('飯塚悠人', 'いいつかゆうと', '1989-02-03', '0', 'y.iituka@proud-g.jp', '77788889999', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('坂口杏', 'さかぐちあん', '1988-05-12', '1', 'a.sakaguti@proud-g.jp', '88899991010', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('武藤裕也', 'むとうゆうや', '1987-07-17', '0', 'y.mutou@proud-g.jp', '99910101111', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('杉原陽子', 'すぎはらようこ', '1988-03-13', '1', 'y.sugihara@secure-i.jp', '11112121313', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('飯島雫', 'いいじましずく', '1997-06-07', '1', 's.iijima@secure-i.jp', '12113131414', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('吉岡大樹', 'よしおかだいき', '1994-01-23', '0', 'd.yosioka@lberc-g.jp', '13114141515', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('冴島隆弘', 'さえじまたかひろ', '1992-10-11', '0', 't.saejima@lberc-g.jp', '14115151616', '0', 'system', 'system');
+INSERT INTO employee_info
+(name, name_hiragana, birthday, sex, mail_address, telephone_number, is_deleted, created_id, modified_id) 
+VALUES
+('渡辺祥文', 'わたなべよしふみ', '1994-12-15', '0', 'y.watanabe@proud-g.jp', '15116161717', '0', 'system', 'system');
+
+
+-- 会社情報テーブルにデータを登録
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('1', '株式会社セキュアギークス', 'SGK', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('2', '株式会社セキュアアイリス', 'SIR', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('3', '株式会社セキュアトリニティ', 'STR', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('4', '株式会社セキュアアクシス', 'SAX', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('5', '株式会社エルバークオリティ', 'LBQ', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('6', '株式会社エルバーククラウド', 'LBC', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('7', '株式会社プラウドデータ', 'PDA', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('8', '株式会社プラウドルーク', 'PRK', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('9', '株式会社ライズ', 'RIS', '0', 'system', 'system');
+INSERT INTO company_info
+(company_id, company_name, abbreviation, is_deleted, created_id, modified_id) 
+VALUES
+('10', '株式会社ライズエクシード', 'REX', '0', 'system', 'system');
+
+
+-- 社員状況テーブルにデータを登録
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('1', '1', '鈴木広子', '0', '1', '0', '2019-07-08', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, retire_date, is_deleted, created_id, modified_id)
+VALUES
+('2', '1', '吉田桂子', '4', '0', '1', '2018-01-08', '2018-08-31', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('3', '2', '大蔵芽生', '2', '1', '2', '2019-06-10', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('4', '3', '三浦勝', '1', '0', '0', '2017-06-05', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, retire_date, is_deleted, created_id, modified_id)
+VALUES
+('5', '5', '鈴木広子', '2', '1', '1', '2019-06-10', '2020-01-31', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('6', '5', '吉田桂子', '4', '1', '0', '2019-06-08', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('7', '6', '鈴木広子', '3', '0', '0', '2019-08-12', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, retire_date, is_deleted, created_id, modified_id)
+VALUES
+('8', '7', '鈴木広子', '0', '1', '1', '2019-09-16', '2020-01-31', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('9', '8', '大蔵芽生', '0', '0', '3', '2020-01-06', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('10', '7', '吉田桂子', '2', '1', '0', '2019-02-18', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('11', '4', '鈴木広子', '1', '1', '0', '2017-10-16', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, retire_date, is_deleted, created_id, modified_id)
+VALUES
+('12', '4', '大蔵芽生', '0', '0', '1', '2018-02-12', '2019-10-31', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, retire_date, is_deleted, created_id, modified_id)
+VALUES
+('13', '5', '大蔵芽生', '2', '0', '1', '2018-02-12', '2019-12-20', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('14', '6', '三浦勝', '4', '0', '0', '2017-11-13', '0', 'system', 'system');
+INSERT INTO employee_state
+(employee_info_id, company_info_id, business_manager, department, commissioning_status , status, hire_date, is_deleted, created_id, modified_id)
+VALUES
+('15', '7', '三浦勝', '0', '1', '0', '2017-11-13', '0', 'system', 'system');
